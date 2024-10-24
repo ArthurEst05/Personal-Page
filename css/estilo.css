@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Cabeçalho*/
+header {
+    background-color: #0256b6;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    
+}
+
+
+header h1 {
+    font-size: 28px;
+    text-align: left;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #2a6db9;
+}
+
+.header-content {
+    width: 100%;
+    max-width: 1200px; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+
+
+/*Tabelas*/
+table{
+    width: 45%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead tr{
+    background-color: #026bc2;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover{
+    background-color: #b6b4b4;
+}
+
+/*Formulario*/
+#form-contato{
+    background-color: aliceblue;
+    padding: 30px;
+}
+
+#tit-form{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 37px;
+}
+
+form{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+form textarea{
+    height: 150px;
+    resize: vertical;
+}
+
+#botao {
+    background-color: #2a6db9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#botao:hover{
+    background-color: #245ea0;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #2a6db9;
+    outline:none;
+}
+
+/*Sobre*/
+#sobre{
+    background-image: url(dalle.webp);
+    text-align: center;
+    padding: 20px;
+}
+
+#sobre h2{
+    padding-bottom: 15px;
+    font-size: 25px;
+}
+
+#sobre div{
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+}
+
+#img-art{
+    width: 250px;
+    border-radius: 100%;
+    border: 3px solid #333;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/*Area Acadêmica*/
+#area-academica{
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#area-academica h2{
+    padding: 15px;
+    font-size: 25px;
+}
+
+#area-academica h3{
+    padding: 15px;
+    font-size: 23px;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0256b6;
+    border-radius: 10px;
+}
+
+.mod-skl{
+    width: 45%;
+    margin: 1%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.logo{
+    width: 80px;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+/*Hobbies*/
+#hobbies{
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#hobbies h2{
+    padding: 15px;
+    font-size: 25px;
+}
+
+#hobbies h3{
+    padding-bottom: 15px;
+    font-size: 23px;
+}
+
+.mod-hob{
+    padding: 20px;
+    border-radius: 20px;
+    margin: 30px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    height: 300px;
+}
+
+.mod-hob ol li{
+    list-style-position: inside;
+}
+
+#bomba p{
+    padding-bottom: 20px;
+}
+#bomba table{
+    margin: auto;
+    
+}
+/*Hob Jogos*/
+#jogos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./high-angle-hands-holding-controller.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 340px;
+}
+
+#div-jogos{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    gap: 20px; 
+}
+
+.div-jogos{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    width: 170px;
+}
+
+.div-jogos img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.div-jogos img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Musculacao*/
+#bomba{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(dumbbells-floor-gym-ai-generative.jpg);
+    background-size: cover;
+    color: white;
+    background-position: center;
+}
+
+/*Hob Filmes*/
+#filmes{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(3d-glasses-movies-tickets-view_23-2149558750.jpg);
+    background-size: cover;
+    color: white;
+    background-position: center;
+    height: 340px;
+}
+
+#div-filmes{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    gap: 20px; 
+}
+
+.div-filmes{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    width: 170px;
+}
+
+.div-filmes img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.div-filmes img:hover{
+    transform: scale(1.1);
+}
+/*Hob Series*/
+#series{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(man-watching-show-his-tv_23-2149047401.png);
+    background-size: cover;
+    color: white;
+    background-position: center;
+    height: 340px;
+}
+
+#div-series{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    gap: 20px; 
+}
+
+.div-series{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    width: 170px;
+}
+
+.div-series img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease; 
+}
+
+.div-series img:hover{
+    transform: scale(1.1);
+}
+/*Hob music*/
+#musica{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pexels-pixabay-159376.jpg);
+    background-size: cover;
+    color: white;
+    background-position: top;
+    height: 320px;
+}
+
+#div-musica{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%;
+    gap: 20px; 
+}
+
+.div-musica{
+    width: 30%;
+    padding: 20px;
+    text-align: center;
+    width: 170px;
+}
+
+.div-musica img {
+    width: 100px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.div-musica img:hover{
+    transform: scale(1.1);
+}
+/*Rodapé*/
+footer {
+    background-color: #245ea0;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+    width: 100%; /* Preencher a largura do rodapé */
+    text-align: center; /* Centraliza o texto no rodapé */
+}
+
+/* Container do rodapé */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seções do rodapé */
+.footer-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer-section a {
+    margin: 0 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    font-size: 12px;
+}
+
+footer img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
+
+
+
+
