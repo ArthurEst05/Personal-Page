@@ -373,7 +373,7 @@ form textarea:focus {
     background-size: cover;
     color: white;
     background-position: top;
-    height: 320px;
+    height: 400px;
 }
 
 #div-musica{
@@ -406,8 +406,8 @@ footer {
     color: white;
     padding: 20px 0;
     font-size: 14px;
-    width: 100%; /* Preencher a largura do rodapé */
-    text-align: center; /* Centraliza o texto no rodapé */
+    width: 100%; 
+    text-align: center; 
 }
 
 /* Container do rodapé */
@@ -451,6 +451,14 @@ footer img {
     margin: 5px;
 }
 
-
+button {
+    background-color: #cccccc;
+    border-color: #0256b6;
+    border-radius: 50px;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+  }
 
 
